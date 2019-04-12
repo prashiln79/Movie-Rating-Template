@@ -1,0 +1,39 @@
+
+<app-top-panel></app-top-panel>
+<div class="text-center">
+    <form class="form-signin" #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate >
+        <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+       
+
+           <!-- User Email Address Start-->
+        <label for="inputEmail" class="sr-only">Full Name</label>
+        <input type="email" class="form-control" id="fullname" placeholder="Full Name" name="fullname" fullname required ngModel #fullname="ngModel">
+        <span class="help-bpx" *ngIf="fullname.touched && !fullname.valid ">Please Enter The Full Name </span>
+
+       
+
+        <!-- User Email Address Start-->
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email" email required ngModel #email="ngModel">
+        <div *ngIf="email.touched && email.invalid">
+          <span class="help-bpx" *ngIf="email.errors.required">Please Enter The Email Value</span>
+          <span class="help-bpx" *ngIf="email.errors.email">Please enter the valid Email address</span>
+        </div>
+        
+  
+        <!-- User Password Start -->
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password"  name="password" password required ngModel #password="ngModel">
+        <span class="help-bpx" *ngIf="password.touched && !password.valid ">Please Enter The Email Value</span> 
+        <!-- User Password end -->
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" [disabled]="!form.valid"  type="submit">Register</button>
+      
+      </form>
+    
+    </div>
