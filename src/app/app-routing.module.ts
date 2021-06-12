@@ -7,7 +7,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 
 const routes: Routes = [
 
-  { path: 'movie-Rating', component: LandingpageComponent },
+  { path: '', component: LandingpageComponent },
+  { path: 'movie-Rating/', component: LandingpageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'homepage', component: HomepageComponent },
