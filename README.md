@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-<h3><b>Demo</b></h3>: <a>https://prashiln79.github.io/movie-Rating/</a>
+##Demo
+https://prashiln79.github.io/movie-Rating/
 
 ## Development server
 
