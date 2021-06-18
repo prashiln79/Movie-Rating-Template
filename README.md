@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ##Demo
-https://prashiln79.github.io/movie-Rating/
+https://prashiln79.github.io/Movie-Rating-Template/
 
 ## Development server
 
